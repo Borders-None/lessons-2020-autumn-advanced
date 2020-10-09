@@ -62,7 +62,7 @@ Customization is done at the bottom page of repository settings
 - be aware which branch you used to publish your github page
 
 
-Homework: 
+## Homework: 
 - create a personal github page
 - create a project named `cwb-homeworks` and create a github page for it
   - add teachers as your collaborators
