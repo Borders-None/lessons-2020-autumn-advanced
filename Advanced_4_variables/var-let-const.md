@@ -4,15 +4,16 @@
 
 We need to be aware of many things related to variables:
 - the scope 
-  -> where they are accessible
-- are they changeable or not
+- the mutability
 
 ## The Scope 
 
+A scope is in programming is a region of the program where a defined variable can be accessed
 We have a block or function scope, but what does it mean.
 
-A function scope is that a variable is accessible withing a the function and
-block scope that the variable is acessible withing a block of code.
+A function scope means that a variable is accessible within a function and
+block scope means that the variable is acessible withing a block of code.
+Block of code is usually surrounded with `{ }`, we can also declared a variable in for loop.
 
 if we define var anywhere within a function we can access it throughout the function,
 with the let and const that is not the case.
@@ -20,7 +21,7 @@ with the let and const that is not the case.
 Examples:
 - function scope
 
-        function function_scope() {
+        function functionScope() {
 
             if (true) {
                 var a = 5;
@@ -31,23 +32,23 @@ Examples:
     - variable `a` is accessible outside of block of code enclosed with `{ }` in `if` statement
 
 - block scope
-**let**
+  - **let**
 
-        function block_scope_let() {
+        function blockScopeLet() {
             
             if (true) {
                 let a = 5;
             }
-            console.log(a); -- it throw a reference error because a is not accessible 
+            console.log(a); 
         }
 
     - We cannot access a variable `a` because it only accessible within if statement
       -> We get an `Reference error`
 
 
-**const**
+  - **const**
 
-        function block_scope_const() {
+        function blockScopeConst() {
 
             if (true) {
                 const a = 5;
@@ -75,7 +76,7 @@ examples:
     console.log(l);
 
     const c = 'b';
-    c = 'a'; -- error
+    c = 'a';  // Uncaught TypeError: Assignmet to constant variable
 
 
 Is const a really immutable??
@@ -83,29 +84,34 @@ Is const a really immutable??
 Let's take an object (an array) for an example.
 
     const ar1 = ['john', 'ringo', 'paul', 'george'];
-    const ar1[4] = 'martin'
+    const ar1[4] = 'martin'; // new member is added
+    const ar1[0] = 'ned';    // member is updated
+    console.log(ar1);       // prints ['ned', 'john', 'ringo', 'paul', 'martin']
 
-    var ton = ['ton']
-    ar1 = ton -- error
+    var ton = ['ton'];
+    ar1 = ton;          // Uncaught TypeError: Assignmet to constant variable
 
 We can change the value(s) of an object but we cannot assing new object to the variable
 We will practice this more later.
 
 
-## let vs var part 2
+## Variable Declaration
+
+## Number of variable declarations 
 
 Variable using `var` can be declared multiple times.
 Be aware that if we don't declate a variable it is implicitly declared by `var`
 By using `let` only once
 
-    a = 5;      -- implicit var declaration
+    a = 5;      // implicit var declaration
     var a = 5;
     var a = 10;
 
     let n = 10;
-    let n = 15;  -- error
+    let n = 15;  // error since we can declare it only once
+    n = 20;      // OK since we are only assigning a value
 
-## let vs var part 3
+### Declaring variables in a for loop and its scope
 
 Using variables in for loops
 
@@ -116,7 +122,7 @@ Using variables in for loops
         }
 
         console.log("\n");
-        console.log(i);    -- it prints 5
+        console.log(i);    // it prints 5
     } 
 
 
@@ -127,7 +133,9 @@ Using variables in for loops
         }
 
         console.log("\n");
-        console.log(i);    -- i is not accessible outside of the loop
+        console.log(i);    // ReferenceError: i is not defined
     } 
 
-Be aware how you define variables in for loops
+Be aware how you define variables in `for` loops
+
+
