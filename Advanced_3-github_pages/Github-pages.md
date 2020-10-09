@@ -3,7 +3,6 @@
 ## About github pages
 
 - does not support CDN
-- cannot reference external links
 - only static files are available (no server side languages)
 - possible to host React projects
 - possible to host to custom domain
@@ -66,4 +65,4 @@ Customization is done at the bottom page of repository settings
 Homework: 
 - create a personal github page
 - create a project named `cwb-homeworks` and create a github page for it
-
+  - add teachers as your collaborators
