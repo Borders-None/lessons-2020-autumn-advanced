@@ -97,7 +97,7 @@ We will practice this more later.
 
 ## Variable Declaration
 
-## Number of variable declarations 
+### Number of variable declarations 
 
 Variable using `var` can be declared multiple times.
 Be aware that if we don't declate a variable it is implicitly declared by `var`
