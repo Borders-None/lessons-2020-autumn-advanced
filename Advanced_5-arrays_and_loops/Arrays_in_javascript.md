@@ -43,9 +43,9 @@ Last element: `students[students.length - 1]`
 
 We just need to assign a value to an array with a certain index.
 
-First element: `students[0] = 'Peter'`  
-Second element: `students[1] = 'John'`   
-Last element: `students[students.length - 1] = 'Anna'`   
+First element: `students[0] = 'Peter'`
+Second element: `students[1] = 'John'`
+Last element: `students[students.length - 1] = 'Anna'`
 
 ## Erasing values in the array
 
