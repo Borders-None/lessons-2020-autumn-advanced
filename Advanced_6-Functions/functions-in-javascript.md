@@ -63,25 +63,25 @@ Function declaration support hoisting but function expression doesn't.
 
 **Function declaration** 
 
-'''
+```
 print(5);
 
 function print(param) {
   console.log(param);
 }
-'''
+```
 
 Program prints out 5
 
-**Function declaration
+**Function declaration**
 
-'''
+```
 print(5);
 
 let print = function print(param) {
   console.log(param);
 }
-'''
+```
 
 We get an reference error
 
