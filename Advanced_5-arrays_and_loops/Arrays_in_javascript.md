@@ -35,17 +35,17 @@ Javascript array has a length property which we can easily access.
 The first element has an index 0, and last element has and index of length-1
 We access the array element by stating the name of the array and the index
 
-First element: `students[0]`
-Second element: `students[1]`
-Last element: `students[students.length - 1]`
+First element: `students[0]`   
+Second element: `students[1]`    
+Last element: `students[students.length - 1]`    
 
 ## Setting values in the array
 
 We just need to assign a value to an array with a certain index.
 
-First element: `students[0] = 'Peter'`
-Second element: `students[1] = 'John'`
-Last element: `students[students.length - 1] = 'Anna'`
+First element: `students[0] = 'Peter'`      
+Second element: `students[1] = 'John'`     
+Last element: `students[students.length - 1] = 'Anna'`    
 
 ## Erasing values in the array
 
