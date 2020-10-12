@@ -43,6 +43,6 @@ Guess the result of these statemets:
 - `2 + 2 * 2`
 - `5 <= 5`
 
-## Exercise 2 - branching
+## Exercise 2 - if-else branching
 
 Check [scrips.js](./demo/scripts/script.js)
