@@ -8,7 +8,6 @@ For today's lecture we will working with following:
 1. For loop
 2. while loop
 3. inner loops
-3. labeled statement
 4. break statement
 5. continue statement
 
@@ -158,7 +157,7 @@ outer loop
     inner loop
 ```
 
-Or if we use two for loops:
+Or if we use two `for` loops:
 
 ```
 for (let i = 0; i < 5; i++) {
@@ -172,13 +171,15 @@ for (let i = 0; i < 5; i++) {
 }
 ``` 
 
-Following code has following output:
+The code has following output:
 
-Outer: 0, Inner: 10 9 8 7 6
-Outer: 1, Inner: 10 9 8 7 6
-Outer: 2, Inner: 10 9 8 7 6
-Outer: 3, Inner: 10 9 8 7 6
-Outer: 4, Inner: 10 9 8 7 6
+    ```
+    Outer: 0, Inner: 10 9 8 7 6
+    Outer: 1, Inner: 10 9 8 7 6
+    Outer: 2, Inner: 10 9 8 7 6
+    Outer: 3, Inner: 10 9 8 7 6
+    Outer: 4, Inner: 10 9 8 7 6
+    ```
 
 
 Practice assignments:
@@ -186,9 +187,10 @@ Practice assignments:
 1. Create for that prints all elements of folowing array  `['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']` 
    Forward and backwards
 2. Print numbers from 1 to 100 that are divisible by 7
-3. Print number from 100 to 0 what are divisible
-4. Create a loop that skips to the next step when the value is divisible by 9 and 
-   exits loop when the number is divisible by 17. Use `break` and `continue` to perform a task.
+3. Print number from 100 to 0 what are divisible by 13
+4. Create a loop sums number from 0 to 100 and that skips to the next step  
+   when the value is divisible by 9 and exits loop when the number is divisible by 17.\
+   Use `break` and `continue` to perform a task.
 5. Print a letter from the array and numbers up to position (index) of the letter
    Use inner loops
    Example: 
@@ -203,11 +205,13 @@ Practice assignments:
    This is a a chessboard location matrix. 
    You need to use an array `['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']`
    For everything else you should use loops
-A8 B8 C8 D8 E8 F8 G8 H8 
-A7 B7 C7 D7 E7 F7 G7 H7 
-A6 B6 C6 D6 E6 F6 G6 H6 
-A5 B5 C5 D5 E5 F5 G5 H5 
-A4 B4 C4 D4 E4 F4 G4 H4 
-A3 B3 C3 D3 E3 F3 G3 H3 
-A2 B2 C2 D2 E2 F2 G2 H2 
-A1 B1 C1 D1 E1 F1 G1 H1
+   ```
+    A8 B8 C8 D8 E8 F8 G8 H8 
+    A7 B7 C7 D7 E7 F7 G7 H7 
+    A6 B6 C6 D6 E6 F6 G6 H6 
+    A5 B5 C5 D5 E5 F5 G5 H5 
+    A4 B4 C4 D4 E4 F4 G4 H4 
+    A3 B3 C3 D3 E3 F3 G3 H3 
+    A2 B2 C2 D2 E2 F2 G2 H2 
+    A1 B1 C1 D1 E1 F1 G1 H1
+    ```
