@@ -173,16 +173,13 @@ for (let i = 0; i < 5; i++) {
 
 The code has following output:
 
-    ```
     Outer: 0, Inner: 10 9 8 7 6
     Outer: 1, Inner: 10 9 8 7 6
     Outer: 2, Inner: 10 9 8 7 6
     Outer: 3, Inner: 10 9 8 7 6
     Outer: 4, Inner: 10 9 8 7 6
-    ```
 
-
-Practice assignments:
+## Practice assignments:
 
 1. Create for that prints all elements of folowing array  `['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']` 
    Forward and backwards
