@@ -3,7 +3,6 @@
 ## About github pages
 
 - does not support CDN
-- cannot reference external links
 - only static files are available (no server side languages)
 - possible to host React projects
 - possible to host to custom domain
@@ -29,7 +28,7 @@ Steps:
         - index.html (mandatory)
         - styling (css)
         - javascript
-        - picture
+        - pictures
     4. publish aka push your code you the remote repository
 - link to github pages is `https://username.github.io`
 - if you don't see your page check following:
@@ -44,22 +43,26 @@ Steps:
 - `master` branch is for the actual project we are working on
 - create a branch `gh-pages`
 - enable github pages and point to `gh-pages` branch
-- link to new github pages is `https://username.gituhb.io/alternative/`
+- link to new github pages is `https://username.github.io/alternative/`
   - don't forget to put the last `/` in the link
 
 
 ## Customizing Github pages
 
+Customization is done at the bottom page of repository settings
+
 ### Enable HTTPS
 - enabled by default 
 - at the bottom of repository settings
 
-### Customizing branch for alternative repository
+### Customizing branches for alternative repository
 - at settings page under Github pages we can customize branch
-- `gh-pages` is a default branch (KISS) 
+- `gh-pages` is a default branch for custom project
+- `master/main` branch is default for the personal repository
+- be aware which branch you used to publish your github page
 
 
-Homework: 
+## Homework: 
 - create a personal github page
-- create one project and create a github page for it
-
+- create a project named `cwb-homeworks` and create a github page for it
+  - add teachers as your collaborators

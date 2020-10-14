@@ -1,0 +1,1 @@
+Practical exercise in <https://github.com/josipgrgic/CWB-practice>
