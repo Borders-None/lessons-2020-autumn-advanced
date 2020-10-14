@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-size: large;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: 50px;
+}
+
+button {
+    height: 50px;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    background-color: #f8f899;
+    border-radius: 8px;
+}
