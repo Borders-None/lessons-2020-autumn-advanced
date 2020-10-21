@@ -1,4 +1,4 @@
-We have learned about arrays and objects. Use that knowledge to craete your own implementation of an array object.
+We have learned about arrays and objects. Use that knowledge to create your own implementation of an array object.
 
 # 1. Exercise
 
@@ -9,7 +9,7 @@ We have learned about arrays and objects. Use that knowledge to craete your own 
 -   find
 -   join
 
-The functions must work identically as the original array functions. The best way to check that is by comparing the output of your functions and the output of the original arary methods:
+The methods must work identically as the original array methods. The best way to check that is by comparing the output of your methods and the output of the methods of the inner array object (`myNumberArray.data.flter`, for example):
 
 ```js
 myNumberArray.push(2);
@@ -40,7 +40,7 @@ filter: function (callback) {
 
 # 2. Exercise
 
-Demonstrate that all your implemented array methods work correctly by populating the array with objects (person, car or any other objects) and executing the methods.
+Demonstrate that all your implemented array methods work correctly by populating the array with **objects** (not primitive types like `number` or `string`, but custom objects like person, car or laptop) and executing the methods.
 
 For example:
 
@@ -51,13 +51,15 @@ myNumberArray.push({
     lastName: "Messi",
     age: 33,
 });
+
 myNumberArray.push({
     firstName: "Robert",
     lastName: "Lewandowski",
     age: 32,
 });
-myNumberArray.push(...)
-myNumberArray.push(...)
+
+myNumberArray.push(...);
+myNumberArray.push(...);
 
 // Get players whose age is 33 or greater
 myNumberArray.filter(footballPlayer => footballPlayer.age >= 33);

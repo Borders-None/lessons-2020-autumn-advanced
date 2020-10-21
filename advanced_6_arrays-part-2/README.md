@@ -224,6 +224,38 @@ And we can even go shorter:
 printGreeting(() => "Linus");
 ```
 
+##### Callbacks - example 2
+
+```js
+function squareNumber(number) {
+  return number * number;
+}
+
+function add2ToNumber(number) {
+  return number + 2;
+}
+
+function processUserInput(callback) {
+  const number = prompt("Please enter a number");
+  const result = callback(number);
+  console.log(result);
+}
+
+processUserInput(squareNumber);
+
+processUserInput(add2ToNumber);
+
+processUserInput(function divideNumberBy3(number) {
+  return number * 3;
+});
+
+processUserInput((number) => {
+  return number * 10;
+});
+
+processUserInput((number) => number - 9);
+```
+
 #### `.sort()` with callback
 
 As we said earlier, we can say how we want to sort our array.
@@ -235,17 +267,23 @@ let sprintTimes = [12.0, 11.9, 11.89, 11.5, 13, 15];
 sprintTimes.sort(); // [11.5, 11.89, 11.9, 12, 13, 15]
 
 function compareTimes(first, second) {
-  // if the first element is bigger than the second -> it should go before the second
+  // if the first element is bigger than the second
+  // -> it should go before the second
+  // -> return -1
   if (first > second) {
     return -1;
   }
 
-  // if the first element is smaller than the second -> it should go after the second
+  // if the first element is smaller than the second
+  // -> it should go after the second
+  // -> return 1
   if (first < sesond) {
     return 1;
   }
 
-  // first is equal to second -> it doesn't matter which comes first
+  // first is equal to second
+  // -> it doesn't matter which comes first
+  // -> return 0
   return 0;
 }
 
@@ -253,6 +291,12 @@ sprintTimes.sort(compareTimes); // [15, 13, 12, 11.9, 11.89, 11.5]
 ```
 
 `compareTimes()` is used to compare the elements in the array instead of the default behaviour
+
+If we want to be more efficient, we can simply write:
+
+```js
+sprintTimes.sort((first, second) => second - first);
+```
 
 ### `.forEach()`
 
@@ -299,7 +343,7 @@ barcelonaSquad.forEach(function (name, index) {
 
 #### `.map()`
 
-Like `.forEach`, iterates over the array, but creates a new array by applying a transform function on every element.
+Like `.forEach`, `.map()` iterates over the array, but creates a new array by applying a transform function on every element.
 
 Also one of the more useful ones.
 

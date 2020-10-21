@@ -22,7 +22,7 @@ let person2Club = "Bayern";
 let person3Club = "Juventus";
 ```
 
-Question: How would we store all user info in an array anditerate over all persons and print their info?
+Question: How would we store all user info in an array and iterate over all persons and print their info?
 
 ```js
 let firstNames = [person1FirstName, person2FirstName, person3FirstName];
