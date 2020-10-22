@@ -277,7 +277,7 @@ function compareTimes(first, second) {
   // if the first element is smaller than the second
   // -> it should go after the second
   // -> return 1
-  if (first < sesond) {
+  if (first < second) {
     return 1;
   }
 
@@ -313,7 +313,7 @@ for (let i = 0; i < array.length; i++) {
 }
 
 function printSquaredNumber(number) {
-  const squaredNumber = number;
+  const squaredNumber = number * number;
   console.log(squaredNumber);
 }
 
