@@ -1,7 +1,11 @@
 var text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
 var emails = [
-      { from:"Nataša", title: "Extra materials for learning", body: 'Hey everyone, I am sending you the materials.'},
+      {
+        from:"Nataša",
+        title: "Extra materials for learning",
+        body: 'Hey everyone, I am sending you the materials.'
+      },
       { from:"State lottery", title: "Congratulations, you've won!", body: 'WOW! You did it! You won! So much money!'},
       { from:"Mladen", title: "Don't forget your homework!", body: 'hey, do not forget your homework for Tuesday!'},
       { from:"ACME", title: "Job interview", body: 'When do you have time to stop by for an interview? Would next week work for you?'},
@@ -11,14 +15,11 @@ var emails = [
     
 function emailClicked(event) {
   // console.log(event.target.innerHTML);
-  if (this.children.length > 0) {
-    // remove the body
-    this.removeChild(this.lastChild);
+  const emailBody = this.children[0];
+  if (emailBody.classList.contains('email-body-hidden')) {
+    emailBody.classList.remove('email-body-hidden');
   } else {
-    const emailBody = document.createElement("p");
-    const emailBodyContent = document.createTextNode(text);
-    emailBody.appendChild(emailBodyContent);
-    this.appendChild(emailBody);
+    emailBody.classList.add('email-body-hidden');
   }
 }
     
@@ -28,6 +29,13 @@ function showEmail(email) {
   const newContent = document.createTextNode(email.from + ' – ' + email.title);
   newDiv.appendChild(newContent);
   newDiv.className = "email";
+  // add the body of the email
+  const emailBody = document.createElement("p");
+  const emailBodyContent = document.createTextNode(email.body);
+  emailBody.className = "email-body-hidden";
+  emailBody.appendChild(emailBodyContent);
+  newDiv.appendChild(emailBody);
+//   this.appendChild(emailBody);
   // newDiv.setAttribute('class', 'email');
   newDiv.onclick = emailClicked;
   // newDiv.addEventListener('click', emailClicked);

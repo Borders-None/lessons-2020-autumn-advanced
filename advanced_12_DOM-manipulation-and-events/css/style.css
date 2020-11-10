@@ -26,4 +26,6 @@ header {
   cursor: pointer;
 }
 
-/* .email body {} */
+.email-body-hidden {
+  display: none;
+}
