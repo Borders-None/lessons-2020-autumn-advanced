@@ -26,7 +26,7 @@ After you have installed node, you have to:
 
 1. Position yourself inside the emails_api folder in your favourite terminal (bash, PowerShell, ...)
 2. Run `node install` to install all dependencies. You only need to run this command once
-3. Run `node start` to spin up the Email REST API. You can stop the server by pressing CTRL+C or simply closing the terminal.
+3. Run `npm start` to spin up the Email REST API. You can stop the server by pressing CTRL+C or simply closing the terminal.
 
 After these step you have the REST API running locally on your PC on the http://localhost:3000 endpoint.
 
