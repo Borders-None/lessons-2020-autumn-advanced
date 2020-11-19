@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Border:none</title>
+    <meta name="description" content="Border:none" />
+    <meta name="author" content="Border:none" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header-title" onclick="myMailClicked(event)">MyMightyMail</h1>
+      <button class="refresh" onclick="fetchEmailsFromWebApi()">
+        Refresh e-mail list
+      </button>
+    </header>
+
+    <main>
+      <div class="container"></div>
+    </main>
+
+    <div class="new-email-form">
+      <div class="form-container">
+        <p>Send a new email using a form. No JS involved</p>
+        <form action="http://localhost:3000/api/emails" method="POST">
+          <label for="from-1">From:</label><br />
+          <input type="text" id="from-1" name="from" /><br /><br />
+
+          <label for="title-1">Title:</label><br />
+          <input type="text" id="title-1" name="title" /><br /><br />
+
+          <label for="body-1">Body:</label><br />
+          <input type="text" id="body-1" name="body" /><br /><br />
+
+          <input type="submit" class="submit" value="Send e-mail" />
+        </form>
+      </div>
+
+      <div class="form-container">
+        <p>
+          Send a new email using a form. In this form, we are passing our own
+          submit handler
+        </p>
+        <form id="form-2" onsubmit="sendEmailFormButtonClicked(event)">
+          <label for="from-2">From:</label><br />
+          <input type="text" id="from-2" name="from" /><br /><br />
+
+          <label for="title-2">Title:</label><br />
+          <input type="text" id="title-2" name="title" /><br /><br />
+
+          <label for="body-2">Body:</label><br />
+          <input type="text" id="body-2" name="body" /><br /><br />
+
+          <input type="submit" class="submit" value="Send e-mail" />
+        </form>
+      </div>
+
+      <div class="form-container">
+        <p>This is not a form. We are getting all input values from JS</p>
+
+        <label for="from-3">From:</label><br />
+        <input type="text" id="from-3" /><br />
+        <span class="error" id="from-3-validation"></span>
+        <br /><br />
+
+        <label for="title-3">Title:</label><br />
+        <input type="text" id="title-3" /><br />
+        <span class="error" id="title-3-validation"></span><br /><br />
+
+        <label for="body-3">Body:</label><br />
+        <input type="text" id="body-3" /><br />
+        <span class="error" id="body-3-validation"></span>
+        <br /><br />
+
+        <button
+          class="submit"
+          id="form-3-submit"
+          onclick="sendEmailForm3ButtonClicked(event)"
+        >
+          Send e-mail
+        </button>
+      </div>
+    </div>
+
+    <div id="output" class="output"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
