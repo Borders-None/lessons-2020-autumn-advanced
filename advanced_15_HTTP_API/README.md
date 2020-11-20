@@ -28,6 +28,8 @@ After you have installed node, you have to:
 2. Run `node install` to install all dependencies. You only need to run this command once
 3. Run `npm start` to spin up the Email REST API. You can stop the server by pressing CTRL+C or simply closing the terminal.
 
+- If `npm start` won't work, you can try: `node_modules/.bin/babel-node app.js`
+
 After these step you have the REST API running locally on your PC on the http://localhost:3000 endpoint.
 
 Feel free to look around the code and try to modify it if you feel courageous.
