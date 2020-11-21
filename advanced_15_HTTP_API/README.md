@@ -20,7 +20,7 @@ Additionaly, we can also create and send new e-mails as well. That way, we can a
 
 ## Running the REST API
 
-If you want to run this web api, you will need to downlaod node.js [from here](https://nodejs.org/en/download/) and install it on your computer.
+If you want to run this REST api, you will need to download node.js [from here](https://nodejs.org/en/download/) and install it on your computer.
 
 After you have installed node, you have to:
 
@@ -28,7 +28,10 @@ After you have installed node, you have to:
 2. Run `node install` to install all dependencies. You only need to run this command once
 3. Run `npm start` to spin up the Email REST API. You can stop the server by pressing CTRL+C or simply closing the terminal.
 
-- If `npm start` won't work, you can try: `node_modules/.bin/babel-node app.js`
+- If `npm start` won't work, you can try one of these:
+  - `.\\node_modules\\.bin\\nodemon app.js --exec node_modules\\.bin\\babel-node --`
+  - `node_modules/.bin/babel-node app.js`
+  - `.\\node_modules/.bin/babel-node app.js`
 
 After these step you have the REST API running locally on your PC on the http://localhost:3000 endpoint.
 
