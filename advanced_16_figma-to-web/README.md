@@ -1,6 +1,16 @@
 # Converting a Figma Design to a Real Website
 
-Check out the Figma design at the [following link](https://www.figma.com/file/PXUDi26BTEdlgyE6WrXFJf/Homepage-Tutorial?node-id=0%3A1).
+## Introduction
+
+As a frontend developer, your job is to continuously communicate with UX/UI designers and convert their designs into actual websites.
+
+It's the designer's job to come up with a design of the website based on the hours of research, communication with the client, and sometimes usability testing.
+
+The frontend developer then takes that design and produces a website that satisfies the design requirements. During that process, the developer is working together with the designer to discuss the design and resolve any misunderstandings that come up. For example, something might take a longer time to develop, so it might be removed from the design so to not waste time.
+
+Designers have their own tools in which they develop their designs. One of these is [Figma](https://www.figma.com/) among others like Adobe XD and Sketch.
+
+Check out the Figma design we are going to implement at the [following link](https://www.figma.com/file/PXUDi26BTEdlgyE6WrXFJf/Homepage-Tutorial?node-id=0%3A1).
 
 Adapted from: [Design A Modern Homepage (Figma to Real Website)](https://www.youtube.com/playlist?list=PL0-e1OMq5RP4SspVeenLKzldN_IZhZKSy)
 
