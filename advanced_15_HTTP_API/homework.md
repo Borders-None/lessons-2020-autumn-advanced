@@ -8,4 +8,4 @@ Your job is to disable the send button from the moment it is clicked until the e
 
 You only need to edit the third form, and not the first 2 forms, so you are interested in and need to edit only the `sendEmailForm3ButtonClicked` function.
 
-Hint: you can disable a button or input with the `disabled="true"` attribute.
+Hint: you can disable a button or input with the `disabled` attribute.
