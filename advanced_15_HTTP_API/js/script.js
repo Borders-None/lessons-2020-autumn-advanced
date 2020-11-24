@@ -239,9 +239,9 @@ function sendEmailForm3ButtonClicked(event) {
 }
 
 function main() {
-  fetchEmailsLocally();
+  //fetchEmailsLocally();
   //fetchEmails();
-  //fetchEmailsFromRestApi();
+  fetchEmailsFromRestApi();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
