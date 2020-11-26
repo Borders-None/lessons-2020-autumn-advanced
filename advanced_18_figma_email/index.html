@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Border:none</title>
+    <meta name="description" content="Border:none" />
+    <meta name="author" content="Border:none" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- <header>
+      
+      <button class="refresh" onclick="fetchEmailsFromRestApi()">
+        Refresh e-mail list
+      </button>
+    </header> -->
+
+    <main>
+      <div class="sidenav">
+        <h1 id="header-title" onclick="myMailClicked(event)">MyMightyMail</h1>
+        <a href="">Inbox</a>
+        <a href="">New email</a>
+      </div>
+      <div class="container"></div>
+    </main>
+
+    <!-- <div class="new-email-form">
+      <div class="form-container">
+        <p>
+          Send a new email using a form. In this form, we are passing our own
+          submit handler
+        </p>
+        <form id="form-2" onsubmit="sendEmailFormButtonClicked(event)">
+          <label for="from-2">From:</label><br />
+          <input type="text" id="from-2" name="from" /><br /><br />
+
+          <label for="title-2">Title:</label><br />
+          <input type="text" id="title-2" name="title" /><br /><br />
+
+          <label for="body-2">Body:</label><br />
+          <input type="text" id="body-2" name="body" /><br /><br />
+
+          <input type="submit" class="submit" value="Send e-mail" />
+        </form>
+      </div>
+    </div> -->
+
+    <div id="output" class="output"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

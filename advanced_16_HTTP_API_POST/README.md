@@ -1,6 +1,6 @@
-# DOM Manipulation & Events
+# HTTP API – POST
 
-Let's create a little email web app which shows you your emails and lets you read them.
+Let's create a little email web app which shows you your emails and lets you read them. In this example we both fetch emails from a remote server on the internet and allow you to post new emails to a server (that you will run locally on your computer, but in reality it could also be on the internet).
 
 ## Postman
 
@@ -25,7 +25,7 @@ If you want to run this REST api, you will need to download node.js [from here](
 After you have installed node, you have to:
 
 1. Position yourself inside the emails_api folder in your favourite terminal (bash, PowerShell, ...)
-2. Run `node install` to install all dependencies. You only need to run this command once
+2. Run `npm install` to install all dependencies. You only need to run this command once
 3. Run `npm start` to spin up the Email REST API. You can stop the server by pressing CTRL+C or simply closing the terminal.
 
 - If `npm start` won't work, you can try one of these:

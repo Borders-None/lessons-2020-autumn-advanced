@@ -1,3 +1,3 @@
-# DOM Manipulation & Events
+# DOM HTTP API
 
-Let's create a little email web app which shows you your emails and lets you read them.
+Let's expand our little email web app to fetch the emails from the internet!

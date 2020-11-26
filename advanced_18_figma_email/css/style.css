@@ -1,0 +1,101 @@
+body {
+  background: black;
+  color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;;
+  margin: 0 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 1em 2em;
+  border-bottom: solid lightyellow;
+}
+
+#header-title {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 0 0 20px;
+}
+
+.sidenav {
+  background: #282828;
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  font-size: 24px;
+}
+
+.sidenav a {
+  color:white;
+  display: block;
+  padding: 20px;
+}
+
+.container {
+  padding: 65px 40px 0 240px;
+  /* margin: 2em 2em; */
+  /* max-height: 300px; */
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+}
+
+.email {
+  padding: 20px 8px;
+  /* background: #242424; */
+  /* border-bottom: dotted lightyellow; */
+  cursor: pointer;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.email-body-hidden {
+  display: none;
+}
+
+.new-email-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container {
+  max-width: 300px;
+  border: dotted lightyellow;
+  border-radius: 5%;
+  margin: 1em 2em;
+  padding: 1em 2em;
+}
+
+.new-email-form label {
+  color: seashell;
+}
+
+.new-email-form input,
+button {
+  height: 30px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.new-email-form .submit {
+  background-color: lightyellow;
+}
+
+.output-error {
+  color: red;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+.output-success {
+  color: green;
+}
+
+
+

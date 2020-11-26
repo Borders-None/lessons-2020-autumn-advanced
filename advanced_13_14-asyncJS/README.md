@@ -1,3 +1,3 @@
-# DOM Manipulation & Events
+# Asynchronous JavaScript
 
-Let's create a little email web app which shows you your emails and lets you read them.
+In this example we show you how to use asynchronous JavaScript capabilities.
