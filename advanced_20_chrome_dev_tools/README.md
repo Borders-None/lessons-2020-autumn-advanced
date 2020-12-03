@@ -15,6 +15,7 @@ Things to point out:
 - You can add people as reviewers of your PR. That way, they get an e-mail notification
 - Name your branches sensibly. For example, if you are editing the background image, name it something like `background-image`
 - Make your PRs more specific and your commits more atomic. Big PRs or many different tasks in one pull request are generally bad practice
+- Work together and split the work among yourselves!
 
 ## Next steps
 
